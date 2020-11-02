@@ -1,0 +1,16 @@
+{
+    "name": "DocRefConsulter",
+    "description" : "The browser extension for patients which help to evaluate, filtrate and consider sites, links and other available sources with medical and disease-associated information.",
+    "version": "0.1",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_popup": "consulter_windo.html",
+      "default_icon": "icon_v1.png"
+    },
+	"permissions": [
+		"http://*/*", "https://*/*"
+	]
+  }
