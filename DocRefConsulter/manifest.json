@@ -8,6 +8,6 @@
       "default_icon": "icon_v1.png"
     },
 	"permissions": [
-		"http://*/*", "https://*/*"
+		"tabs"
 	]
   }
