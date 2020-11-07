@@ -18,6 +18,8 @@ async function getRating(page_url) {
 	pUrl = pUrl.split('/')[0];
 	const rows = ratingLibrary.split('\n').slice(1);
 	let targRat = [0,0,0,0];
+	let author = "";
+	let region = "";
 	rows.forEach(elt => {
 		const row = elt.split(',');
 		let a = row[0].replace("https://", "").replace("http://", "").replace("www.", "");
@@ -26,12 +28,16 @@ async function getRating(page_url) {
 			console.log("find");
 			targRat = [parseInt(row[1], 10), parseInt(row[2], 10),
 				parseInt(row[3], 10), parseInt(row[4], 10)];
+			author = row[5];
+			region = row[6];
 		};
 	});
 	console.log(targRat);
 	targRat.push((targRat[0]+ targRat[1]+targRat[2]+targRat[3])/4);
 
 	document.getElementById("page_domen").innerHTML = pUrl;
+	document.getElementById("author").innerHTML = author;
+	document.getElementById("region").innerHTML = region;
 	if(targRat[4] > 0) {
 		document.getElementById("curated_score_inf").innerHTML = targRat[0];
 		document.getElementById("curated_score_supp").innerHTML = targRat[1];
