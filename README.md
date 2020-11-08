@@ -2,6 +2,10 @@
 The browser extension for patients which help to evaluate, filtrate and consider sites, links and other available sources with medical and disease-associated information.
 To hear any serious diagnosis can be a very stressful and frustrating experience. The program is aimed to support such people and help them to orientate within overwhelming information flow which becomes as scary as dramatically important for a patient.
 
+### Demo
+
+https://youtu.be/jAt4TMZmzTw
+
 ### Description
 Within the frame of DayOne Health Hack (Hackaton event)(https://2020.healthhack.solutions/) we decided to focus on challenge **Trusted By Patients-Method** 
 
